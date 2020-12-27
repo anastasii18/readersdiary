@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get '/books_in_the_list/:id', to: 'home#books_in_the_list'
   get '/start' , to: 'new#start'
   get '/add_book' , to: 'new#add_book'
-  post '/add_book' , to: 'new#add_book'
+  post '/add_book' , to: 'new#create'
   get '/authors_book/:id', to: 'home#authors_book'
 end
