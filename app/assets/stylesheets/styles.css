@@ -2,22 +2,26 @@
     font-size: 20px;
     color: darkblue;
     text-align: center;
+    font-size: 45px;
 }
 
 .lists {
     font-size: 22px;
     color: #730E15;
     text-align: center;
+    margin-top: 200px;
+    font-stretch: ultra-expanded;
+    font-size: 45px;
 }
 
 .titles {
-    font-size: 20px;
     color: #B00100;
-    min-width: 200px;
     border: #999999 solid 1px;
     padding: 5px;
+    width: 300px;
+    font-size: 35px;
     background: blanchedalmond;
-    margin: 10px;
+    margin: 10px auto;
     text-align: center;
 }
 
@@ -28,5 +32,18 @@
 .titles-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }

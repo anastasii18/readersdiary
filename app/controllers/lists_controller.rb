@@ -15,8 +15,9 @@ class ListsController < ApplicationController
     @books = Book.all
     #list = List.find_by_id list_id_params
     book = Book.find_by_id params[:id]
-    @list = List.find_by_id params[:id]
-    @book = @list.books.create(book)
+    @lists.book_lists.first.position = list_id_params
+    @book.images = @imgs
+    @pr.save
   end
 
   def show
