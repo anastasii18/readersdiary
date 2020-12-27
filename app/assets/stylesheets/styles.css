@@ -1,8 +1,7 @@
 .books {
-    font-size: 20px;
     color: darkblue;
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .lists {
@@ -11,14 +10,14 @@
     text-align: center;
     margin-top: 200px;
     font-stretch: ultra-expanded;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .titles {
     color: #B00100;
     border: #999999 solid 1px;
     padding: 5px;
-    width: 300px;
+    width: 400px;
     font-size: 35px;
     background: blanchedalmond;
     margin: 10px auto;
@@ -32,7 +31,7 @@
 .titles-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .container {
