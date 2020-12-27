@@ -1,14 +1,33 @@
 .books{
     font-size: 20px;
     color: darkblue;
+    text-align:  center;
 }
 
 .lists{
     font-size: 22px;
-    color: blue;
+    color: #730E15;
+    text-align:  center;
 }
 
 .titles{
-    font-size: 18px;
-    color: black;
+    font-size: 20px;
+    color: #B00100;
+    min-width: 200px;
+    border: #999999 solid 1px;
+    padding: 5px;
+    background: blanchedalmond;
+    margin: 10px;
+    text-align:  center;
+
+}
+
+.titles:hover{
+    background: #f9f9d1;
+}
+.titles-container {
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
 }

@@ -1,15 +1,5 @@
 <div class="lists">Добро пожаловать в Reader`s diary!</div>
 
-<div class="books">Ваши списки:</div>
-
-<div class="titles">
-  <% @lists.each do |list| %>
-    <div>
-      <%= link_to list.list_name, "/home/create_list/#{list.id}"%>
-     <%=  %>
-    </div>
-  <% end %>
-</div>
-
-
-
+  <div class="titles">
+    <%= link_to "Войти", "/start"%><br></div>
+  <div class="titles"><%= link_to "Зарегистироваться", "users/sign_up"%><br></div>

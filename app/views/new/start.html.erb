@@ -1,0 +1,25 @@
+<div class="books">Ваши списки:</div>
+<div class="titles">
+  <% @lists.each do |list| %>
+    <div>
+      <%= link_to list.list_name, "/books_in_the_list/#{list.id}"%>
+      <%=  %>
+    </div>
+  <% end %>
+</div>
+
+<div class="books">Ваши авторы:</div>
+<div class="titles">
+  <% @authors.each do |author| %>
+    <div>
+      <%= link_to author.name, "/authors_book/#{author.id}"%>
+    </div>
+  <% end %>
+</div>
+
+
+<div class="titles">
+    <div>
+      <%= link_to "Добавить книгу", "/add_book"%>
+    </div>
+</div>

@@ -38,3 +38,4 @@ yarn-debug.log*
 # Project exclude paths
 /log/
 /tmp/
+.idea

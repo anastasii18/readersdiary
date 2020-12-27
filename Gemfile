@@ -19,7 +19,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# Use Active Model has_secure_password
+# Use Active User has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
@@ -51,4 +51,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'activeadmin'
 gem 'devise'
+gem 'mailcatcher'
+
+gem 'rack-utf8_sanitizer'
 

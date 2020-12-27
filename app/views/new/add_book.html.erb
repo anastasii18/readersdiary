@@ -1,0 +1,15 @@
+<h2>
+  <div class="lists">Добавить книгу</div>
+</h2>
+<div class="titles">
+  <%= form_for @book do |f| %>
+
+    <div class="field">Author : <%= f.text_field :author %><br/></div>
+    <div class="field">Title : <%= f.fields_for :title %><br/></div>
+    <div class="field">Rating : <%= f.fields_for :rating%><br/></div>
+    <div class="field">Comments : <%= f.fields_for :comments %><br/></div>
+    <div class="field"> Start : <%= f.fields_for :start %><br/></div>
+    <div class="field"> Finish :<%= f.fields_for :finish  %><br/></div>
+    <div class="actions"><%= f.submit %></div>
+  <% end %>
+</div>

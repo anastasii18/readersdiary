@@ -43,6 +43,9 @@ en:
       book:
           one: "Книга"
           other: "Книги"
+      list:
+        one: "Список"
+        other: "Списки"
     attributes:
     active_admin/comment:
       author_type: "Author type"
