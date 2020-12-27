@@ -1,0 +1,6 @@
+<div class="lists">
+  Книга:  <%= @book.author.name %> - <%= @book.title %>
+  <div class="titles">Комментарий: <%= @book.comments %></div>
+  <div class="titles">Оценка: <%= @book.rating %></div>
+  <div class="titles">Прочитано в период с <%= @book.start %> по <%= @book.finish %></div>
+</div>

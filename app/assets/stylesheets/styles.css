@@ -1,16 +1,16 @@
-.books{
+.books {
     font-size: 20px;
     color: darkblue;
-    text-align:  center;
+    text-align: center;
 }
 
-.lists{
+.lists {
     font-size: 22px;
     color: #730E15;
-    text-align:  center;
+    text-align: center;
 }
 
-.titles{
+.titles {
     font-size: 20px;
     color: #B00100;
     min-width: 200px;
@@ -18,16 +18,15 @@
     padding: 5px;
     background: blanchedalmond;
     margin: 10px;
-    text-align:  center;
-
+    text-align: center;
 }
 
-.titles:hover{
+.titles:hover {
     background: #f9f9d1;
 }
+
 .titles-container {
-    display:flex;
+    display: flex;
     justify-content: space-around;
-    width: 100%;
     margin-top: 20px;
 }

@@ -1,6 +1,5 @@
 class NewController < ApplicationController
   before_action :authenticate_user!
-
   def start
     @lists = List.all.preload(:books)
     @authors = Author.all
@@ -15,7 +14,7 @@ class NewController < ApplicationController
   end
 
   def show
-    @book = Book.find(params[:id])
+    @book = Book.find_by_id(params[:id])
   end
 
   def new
@@ -25,14 +24,15 @@ class NewController < ApplicationController
   def create
     book = Book.new book_params
     if book.save
-      redirect_to books_path(book)
+      redirect_to "/show/#{book.id}"
     else
-      redirect_to 'new'
+      redirect_to '/new'
     end
   end
 
   private
   def book_params
-    params.require(:book).permit(:author, :title, :rating, :comments, :start, :finish)
+    params.require(:book).permit( :author_id,:title, :rating, :comments, :start, :finish)
   end
+
 end

@@ -1,0 +1,9 @@
+<h2>
+  <div class="lists">Добавить список</div>
+</h2>
+<div class="titles">
+  <%= form_for :list do |f| %>
+    <div class="field">Название : <%= f.text_field :list_name %><br/></div>
+    <div class="actions"><%= f.submit %></div>
+  <% end %>
+</div>

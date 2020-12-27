@@ -4,7 +4,7 @@
   <div>
     <% @author.books.each do |book| %>
       <div class="titles">
-        <%= book.title %>
+        <%= link_to book.title , "/about_book/#{book.id}" %>
       </div>
     <% end %>
   </div>

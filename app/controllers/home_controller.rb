@@ -14,6 +14,11 @@ class HomeController < ApplicationController
     @books = Book.all
     @book = Book.find_by_id params[:id]
   end
-
+  def about_book
+    @author = Author.find_by_id params[:id]
+    @list = List.find_by_id params[:id]
+    @books = Book.all
+    @book = Book.find_by_id params[:id]
+  end
   before_action :require_login, :only => :secret
 end
