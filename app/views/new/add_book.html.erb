@@ -1,14 +1,16 @@
-<h2>
-  <div class="lists">Добавить книгу</div>
-</h2>
-<div class="titles">
-  <%= form_for :book do |f| %>
-    <div class="field">Author : <%= f.collection_select :author_id, Author.all, :id, :name %><br/></div>
-    <div class="field">Title : <%= f.text_field :title %><br/></div>
-    <div class="field">Rating : <%= f.text_field :rating%><br/></div>
-    <div class="field">Comments : <%= f.text_field :comments %><br/></div>
-    <div class="field"> Start : <%= f.date_field :start %><br/></div>
-    <div class="field"> Finish :<%= f.date_field :finish  %><br/></div>
-    <div class="actions"><%= f.submit %></div>
-  <% end %>
+<div class="siximg">
+  <h2>
+    <div class="lists">Добавить книгу</div>
+  </h2>
+  <div class="titles">
+    <%= form_for :book do |f| %>
+      <div class="field">Author : <%= f.collection_select :author_id, Author.all, :id, :name %><br/></div>
+      <div class="field">Title : <%= f.text_field :title %><br/></div>
+      <div class="field">Rating : <%= f.text_field :rating %><br/></div>
+      <div class="field">Comments : <%= f.text_field :comments %><br/></div>
+      <div class="field"> Start : <%= f.date_field :start %><br/></div>
+      <div class="field"> Finish :<%= f.date_field :finish %><br/></div>
+      <div class="actions"><%= f.submit %></div>
+    <% end %>
+  </div>
 </div>

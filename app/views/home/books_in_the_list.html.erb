@@ -1,10 +1,13 @@
-<div class="lists">
-<div>Cписок <%= @list.list_name %>!</div>
-
-    Книги:
-    <% @list.books.each do |book| %>
-      <div class="titles">
-        <%= link_to book.title, "/about_book/#{book.id}"%>
-      </div>
-    <% end %>
+<div class="fourimg">
+  <div class="lists">
+    <div>Cписок <%= @list.list_name %>!</div>
   </div>
+  <div class="books">
+    Книги:
+  </div>
+  <% @list.books.each do |book| %>
+    <div class="titles">
+      <%= link_to book.title, "/about_book/#{book.id}" %>
+    </div>
+  <% end %>
+</div>

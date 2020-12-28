@@ -1,16 +1,39 @@
 .books {
     color: darkblue;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
+    border: #999999 solid 1px;
+    font-stretch: ultra-expanded;
+    background: #EFEFEF;
+    min-height: em4;
+    border-radius: 600px / 200px;
+    width: 9em;
+    margin: auto;
 }
 
+.books-container {
+    display: inline-block;
+    justify-content: space-around;
+
+}
 .lists {
-    font-size: 22px;
     color: #730E15;
     text-align: center;
-    margin-top: 200px;
-    font-stretch: ultra-expanded;
     font-size: 40px;
+    border: #999999 solid 1px;
+    font-stretch: ultra-expanded;
+    background: #ffebcd;
+    min-height: em3;
+    border-radius: 800px / 400px;
+    width: 18em;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.lists-container {
+    display: inline-block;
+    justify-content: space-around;
+
 }
 
 .titles {
@@ -19,9 +42,10 @@
     padding: 5px;
     width: 400px;
     font-size: 35px;
-    background: blanchedalmond;
-    margin: 10px auto;
+    background: #ffebcd;
+    margin: 5px auto;
     text-align: center;
+
 }
 
 .titles:hover {
@@ -31,7 +55,7 @@
 .titles-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 35px;
+
 }
 
 .container {
@@ -45,4 +69,77 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+}
+
+.oneimg {
+    background-image: url(1_1.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.twoimg {
+    background-image: url(1_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.threeimg {
+    background-image: url(1.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+}
+
+.fourimg {
+    background-image: url(2.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+}
+
+.fiveimg {
+    background-image: url(3.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.siximg {
+    background-image: url(4.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
 }

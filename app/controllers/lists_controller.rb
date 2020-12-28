@@ -3,21 +3,15 @@ class ListsController < ApplicationController
     @lists = List.all
   end
 
-  def add_book_in_list
-    @lists = List.all.preload(:books)
+  def add_book
+    @lists = List.all
     @books = Book.all
-    @list = List.find_by_list_name params[:list_name]
-    @book = Book.find_by_id params[:id]
+    @list = List.find_by_id(list_params)
+    @book = Book.find_by_id(book_params)
   end
 
-  def add_books
-    @lists = List.all.preload(:books)
-    @books = Book.all
-    #list = List.find_by_id list_id_params
-    book = Book.find_by_id params[:id]
-    @lists.book_lists.first.position = list_id_params
-    @book.images = @imgs
-    @pr.save
+  def add_book_in_list
+    @list.books.append(:book)
   end
 
   def show
@@ -38,11 +32,11 @@ class ListsController < ApplicationController
   end
 
   private
-  def list_params
-    params.require(:list).permit( :list_name)
+  def book_params
+    params.permit(  :book_id  )
   end
 
-  def list_id_params
-    params.require(:list).permit( :list_id)
+  def list_params
+    params.permit(  :list_id  )
   end
 end

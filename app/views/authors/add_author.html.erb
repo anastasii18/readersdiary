@@ -1,9 +1,11 @@
-<h2>
-  <div class="lists">Добавить автора</div>
-</h2>
-<div class="titles">
-  <%= form_for :author do |f| %>
-    <div class="field">Name : <%= f.text_field :name %><br/></div>
-    <div class="actions"><%= f.submit %></div>
-  <% end %>
+<div class="siximg">
+  <h2>
+    <div class="lists">Добавить автора</div>
+  </h2>
+  <div class="titles">
+    <%= form_for :author do |f| %>
+      <div class="field">Name : <%= f.text_field :name %><br/></div>
+      <div class="actions"><%= f.submit %></div>
+    <% end %>
+  </div>
 </div>
