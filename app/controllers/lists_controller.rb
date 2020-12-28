@@ -11,7 +11,9 @@ class ListsController < ApplicationController
   end
 
   def add_book_in_list
-    @list.books.append(:book)
+    list = List.find_by_id(list_params)
+    book = Book.find_by_id(book_params)
+    list.books.append(book)
   end
 
   def show
